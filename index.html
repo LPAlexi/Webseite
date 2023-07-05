@@ -8,7 +8,7 @@
     /* ... (vorheriger Code) ... */
 
     /* Stildefinitionen für das Menüband oben */
-  .top-banner {
+    .top-banner {
       background-image: url("https://github.com/LPAlexi/Webseite/raw/master/Glörtal_SperreBanner.jpg");
       background-size: cover;
       height: 200px;
@@ -18,66 +18,65 @@
     }
 
     .menu-bar-top {
-  background-color: #00008B; /* Dunkles Blau */
-  color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
+      background-color: #00008B; /* Dunkles Blau */
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
 
+    .menu-bar-top ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
 
+    .menu-bar-top li {
+      margin-right: 10px;
+    }
 
-.menu-bar-top ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
+    .menu-bar-top li a {
+      color: #fff; /* Weiß */
+      text-decoration: none;
+    }
 
-.menu-bar-top li {
-  margin-right: 10px;
-}
+    .menu-bar-top li a:hover {
+      text-decoration: underline;
+    }
 
-.menu-bar-top li a {
-  color: #fff; /* Weiß */
-  text-decoration: none;
-}
+    /* Stildefinitionen für das Menüband links */
+    .menu-bar-left {
+      background-color: #00008B; /* Dunkles Blau */
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      top: 3cm;
+      left: 0;
+      height: calc(100vh - 3cm);
+    }
 
-.menu-bar-top li a:hover {
-  text-decoration: underline;
-}
+    .menu-bar-left ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
 
-/* Stildefinitionen für das Menüband links */
-.menu-bar-left {
-  background-color: #00008B; /* Dunkles Blau */
-  color: #fff;
-  padding: 10px;
-  position: fixed;
-  top: 3cm;
-  left: 0;
-  height: calc(100vh - 3cm);
-}
+    .menu-bar-left li {
+      margin-bottom: 10px;
+    }
 
-.menu-bar-left ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
+    .menu-bar-left li a {
+      color: #fff; /* Weiß */
+      text-decoration: none;
+    }
 
-.menu-bar-left li {
-  margin-bottom: 10px;
-}
+    .menu-bar-left li a:hover {
+      text-decoration: underline;
+    }
 
-.menu-bar-left li a {
-  color: #fff; /* Weiß */
-  text-decoration: none;
-}
-
-.menu-bar-left li a:hover {
-  text-decoration: underline;
-}
     /* Stildefinitionen für die Fußzeile */
     .footer {
       background-color: #A2B5CD;
@@ -115,12 +114,8 @@
 
     body {
       background-color: #27408B; /* Dunkles Blau */
+      margin-left: calc(250px + 10px); /* Breite des linken Menübands plus 10px Abstand */
     }
-
-    /* ... (weiterer Code) ... */
-body {
-  margin-left: calc(250px + 10px); /* Breite des linken Menübands plus 10px Abstand */
-}
   </style>
 </head>
 <body>
@@ -173,14 +168,14 @@ body {
     </ul>
   </div>
 
-<h1>Naturfotografien aus dem Ruhrgebiet</h1>
-<div class="image-description">
-  <p>Das Ruhrgebiet in Deutschland beeindruckt nicht nur mit seiner industriellen Vergangenheit, sondern auch mit einer vielfältigen und reizvollen Natur.</p>
-  <p>Die Region ist reich an grünen Oasen, Parks und Flusslandschaften, die zum Entdecken und Erholen einladen.</p>
-  <p>Der landschaftliche Wandel hat dem Ruhrgebiet eine beeindruckende Vielfalt an Lebensräumen und Artenreichtum beschert.</p>
-  <p>Von idyllischen Seen und Flüssen wie dem Baldeneysee und der Ruhr bis hin zu weitläufigen Wäldern und Naturschutzgebieten wie dem Kemnader See und dem Hohenstein bieten sich zahlreiche Möglichkeiten für Outdoor-Aktivitäten und Naturerlebnisse.</p>
-  <p>Ob DEINE MUTTER beim Wandern, Radfahren, Vogelbeobachten oder einfach nur beim Entspannen in der Natur - das Ruhrgebiet begeistert mit seiner natürlichen Schönheit und lädt dazu ein, die harmonische Verbindung von Industrie und Natur zu entdecken.</p>
-</div>
+  <h1>Naturfotografien aus dem Ruhrgebiet</h1>
+  <div class="image-description">
+    <p>Das Ruhrgebiet in Deutschland beeindruckt nicht nur mit seiner industriellen Vergangenheit, sondern auch mit einer vielfältigen und reizvollen Natur.</p>
+    <p>Die Region ist reich an grünen Oasen, Parks und Flusslandschaften, die zum Entdecken und Erholen einladen.</p>
+    <p>Der landschaftliche Wandel hat dem Ruhrgebiet eine beeindruckende Vielfalt an Lebensräumen und Artenreichtum beschert.</p>
+    <p>Von idyllischen Seen und Flüssen wie dem Baldeneysee und der Ruhr bis hin zu weitläufigen Wäldern und Naturschutzgebieten wie dem Kemnader See und dem Hohenstein bieten sich zahlreiche Möglichkeiten für Outdoor-Aktivitäten und Naturerlebnisse.</p>
+    <p>Ob beim Wandern, Radfahren, Vogelbeobachten oder einfach nur beim Entspannen in der Natur - das Ruhrgebiet begeistert mit seiner natürlichen Schönheit und lädt dazu ein, die harmonische Verbindung von Industrie und Natur zu entdecken.</p>
+  </div>
   <div class="gallery" id="imageGallery">
     <!-- Hier werden die Bilder dynamisch eingefügt -->
   </div>
@@ -221,8 +216,8 @@ body {
       { src: 'O:\Webseite\LPAlexi\DSC_0062.jpg' },
       { src: 'O:\Webseite\LPAlexi\DSC_0062.jpg' },
       { src: 'O:\Webseite\LPAlexi\DSC_0062.jpg' },
-      { src: DSC_0021.jpg },
-      { src: "LPAlexi/DSC_0045.jpg" }
+      { src: 'DSC_0021.jpg' },
+      { src: 'LPAlexi/DSC_0045.jpg' }
     ];
 
     // Bilder in die Galerie einfügen
