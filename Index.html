@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landschaftsgalerie</title>
+  <style>
+    /* Stildefinitionen für das Top-Banner, das Menüband oben und das Menüband links */
+
+    /* ... (vorheriger Code) ... */
+
+    /* Stildefinitionen für das Menüband oben */
+    .menu-bar-top {
+  background-color: #00008B; /* Dunkles Blau */
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.menu-bar-top ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-bar-top li {
+  margin-right: 10px;
+}
+
+.menu-bar-top li a {
+  color: #fff; /* Weiß */
+  text-decoration: none;
+}
+
+.menu-bar-top li a:hover {
+  text-decoration: underline;
+}
+
+/* Stildefinitionen für das Menüband links */
+.menu-bar-left {
+  background-color: #00008B; /* Dunkles Blau */
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 3cm;
+  left: 0;
+  height: calc(100vh - 3cm);
+}
+
+.menu-bar-left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-bar-left li {
+  margin-bottom: 10px;
+}
+
+.menu-bar-left li a {
+  color: #fff; /* Weiß */
+  text-decoration: none;
+}
+
+.menu-bar-left li a:hover {
+  text-decoration: underline;
+}
+    /* Stildefinitionen für die Fußzeile */
+    .footer {
+      background-color: #A2B5CD;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .footer ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer li {
+      margin-right: 20px;
+      color: #fff;
+    }
+
+    /* Stildefinitionen für die Bildergalerie */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      padding: 10px;
+      justify-items: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    body {
+      background-color: #27408B; /* Dunkles Blau */
+    }
+
+    /* ... (weiterer Code) ... */
+body {
+  margin-left: calc(250px + 10px); /* Breite des linken Menübands plus 10px Abstand */
+}
+  </style>
+</head>
+<body>
+<div class="banner">
+  <h2>LPAlexi's</h2>
+</div>
+  <div class="top-banner"></div>
+  <div class="menu-bar-top">
+    <ul>
+      <li><a href="#">Start</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="#">Werbung</a></li>
+      <li><a href="#">Einstellungen</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="Suchen...">
+      <button>Suchen</button>
+    </div>
+  </div>
+
+  <div class="menu-bar-left">
+    <ul>
+      <li><a href="#">Best of</a></li>
+      <li><a href="#">2000</a></li>
+      <li><a href="#">2001</a></li>
+      <li><a href="#">2002</a></li>
+      <li><a href="#">2003</a></li>
+      <li><a href="#">2004</a></li>
+      <li><a href="#">2005</a></li>
+      <li><a href="#">2006</a></li>
+      <li><a href="#">2007</a></li>
+      <li><a href="#">2008</a></li>
+      <li><a href="#">2009</a></li>
+      <li><a href="#">2010</a></li>
+      <li><a href="#">2011</a></li>
+      <li><a href="#">2012</a></li>
+      <li><a href="#">2013</a></li>
+      <li><a href="#">2014</a></li>
+      <li><a href="#">2015</a></li>
+      <li><a href="#">2016</a></li>
+      <li><a href="#">2017</a></li>
+      <li><a href="#">2018</a></li>
+      <li><a href="#">2019</a></li>
+      <li><a href="#">2020</a></li>
+      <li><a href="#">2021</a></li>
+      <li><a href="#">2022</a></li>
+      <li><a href="#">2023</a></li>
+      <li><a href="#">2024</a></li>
+      <li><a href="#">2025</a></li>
+    </ul>
+  </div>
+
+<h1>Naturfotografien aus dem Ruhrgebiet</h1>
+<div class="image-description">
+  <p>Das Ruhrgebiet in Deutschland beeindruckt nicht nur mit seiner industriellen Vergangenheit, sondern auch mit einer vielfältigen und reizvollen Natur.</p>
+  <p>Die Region ist reich an grünen Oasen, Parks und Flusslandschaften, die zum Entdecken und Erholen einladen.</p>
+  <p>Der landschaftliche Wandel hat dem Ruhrgebiet eine beeindruckende Vielfalt an Lebensräumen und Artenreichtum beschert.</p>
+  <p>Von idyllischen Seen und Flüssen wie dem Baldeneysee und der Ruhr bis hin zu weitläufigen Wäldern und Naturschutzgebieten wie dem Kemnader See und dem Hohenstein bieten sich zahlreiche Möglichkeiten für Outdoor-Aktivitäten und Naturerlebnisse.</p>
+  <p>Ob DEINE MUTTER beim Wandern, Radfahren, Vogelbeobachten oder einfach nur beim Entspannen in der Natur - das Ruhrgebiet begeistert mit seiner natürlichen Schönheit und lädt dazu ein, die harmonische Verbindung von Industrie und Natur zu entdecken.</p>
+</div>
+  <div class="gallery" id="imageGallery">
+    <!-- Hier werden die Bilder dynamisch eingefügt -->
+  </div>
+
+  <div class="footer">
+    <ul>
+      <li><a href="#">AGB</a></li>
+      <li><a href="#">Datenschutz</a></li>
+      <li><a href="#">Kontakt</a></li>
+      <li><a href="#">Jugendschutz</a></li>
+      <li><a href="#">Impressum</a></li>
+    </ul>
+  </div>
+
+  <script>
+    // Beispielbilder und Sortierfunktion
+    const images = [
+      { src: 'O:\Bilder\Fotos\DSC_0012.NEF' },
+      { src: 'bild2.jpg' },
+      { src: 'bild3.jpg' },
+      { src: 'bild4.jpg' },
+      { src: 'bild5.jpg' },
+      { src: 'O:\Bilder\Fotos\DSC_0045.jpg' },
+      { src: 'bild7.jpg' },
+      { src: 'bild8.jpg' },
+      { src: 'bild9.jpg' },
+      { src: 'bild10.jpg' },
+      { src: 'bild11.jpg' },
+      { src: 'bild12.jpg' },
+      { src: 'bild13.jpg' },
+      { src: 'bild14.jpg' },
+      { src: 'bild15.jpg' },
+      { src: 'bild16.jpg' },
+      { src: 'O:\Bilder\Fotos\DSC_0045.jpg' },
+      { src: 'bild18.jpg' },
+      { src: 'bild19.jpg' },
+      { src: 'O:\Webseite\LPAlexi\DSC_0062.jpg' },
+      { src: 'O:\Webseite\LPAlexi\DSC_0062.jpg' },
+      { src: 'O:\Webseite\LPAlexi\DSC_0062.jpg' },
+      { src: 'O:\Webseite\LPAlexi\DSC_0062.jpg' },
+      { src: DSC_0021.jpg },
+      { src: "LPAlexi/DSC_0045.jpg" }
+    ];
+
+    // Bilder in die Galerie einfügen
+    const gallery = document.getElementById('imageGallery');
+    images.forEach((image) => {
+      const img = document.createElement('img');
+      img.src = image.src;
+      gallery.appendChild(img);
+    });
+  </script>
+</body>
+</html>
